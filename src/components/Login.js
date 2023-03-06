@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { login, reset } from "../redux/slices/authSlice";
+import { login } from "../redux/slices/authSlice";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
@@ -12,7 +12,6 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { toast } from "react-toastify";
 
 const theme = createTheme();
 
@@ -67,7 +66,7 @@ export default function Login() {
         >
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}></Avatar>
           <Typography component="h1" variant="h5">
-            Sign in
+            Sign in User
           </Typography>
           <Box component="form" noValidate sx={{ mt: 1 }}>
             <TextField
@@ -102,7 +101,7 @@ export default function Login() {
               Sign In
             </Button>
 
-            <Link href="/register">Signup</Link>
+            <Link href="/register">Register</Link>
 
             <Grid container></Grid>
           </Box>
