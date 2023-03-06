@@ -98,7 +98,7 @@ export default function Login() {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign In
+              Sign In change from user auth
             </Button>
 
             <Link href="/register">Register</Link>
