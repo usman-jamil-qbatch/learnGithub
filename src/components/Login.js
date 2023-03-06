@@ -101,7 +101,7 @@ export default function Login() {
               Sign In change from user auth
             </Button>
 
-            <Link href="/register">Register</Link>
+            <Link href="/register">Register change from minor change</Link>
 
             <Grid container></Grid>
           </Box>
